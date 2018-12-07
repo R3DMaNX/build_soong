@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"havoc/soong/android"
+	"six/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -117,8 +117,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Havoc variables
-		Havoc android.Product_variables
+		// include Six variables
+		Six android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -236,8 +236,8 @@ type productVariables struct {
 
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
-	// include Havoc variables
-	Havoc android.ProductVariables
+	// include Six variables
+	Six android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
